@@ -9,3 +9,4 @@ def index(message):
     if(TextBlob(message).sentiment.polarity < 0.0):
       sentiment = "Negative"
     return app.make_response(sentiment)
+
